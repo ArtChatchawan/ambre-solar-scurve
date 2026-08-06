@@ -1,0 +1,353 @@
+{
+  "project_title": "AMBRE FLOATING SOLAR AMATA CITY CHONBURI 42.5 MWp PROJECT",
+  "report_name": "Weekly Progress Report No.16",
+  "cutoff_date": "2026-08-01",
+  "master_schedule_rev": "Rev.0A",
+  "milestones": [
+    {
+      "name": "LNTP (Limited Notice to Proceed)",
+      "date": "2025-11-01",
+      "status": "Completed",
+      "type": "start",
+      "color": "#10b981"
+    },
+    {
+      "name": "KOM (Kick-off Meeting)",
+      "date": "2026-03-12",
+      "status": "Completed",
+      "type": "start",
+      "color": "#10b981"
+    },
+    {
+      "name": "Current Cut-off Status",
+      "date": "2026-08-01",
+      "status": "In Progress",
+      "type": "current",
+      "color": "#00f2fe"
+    },
+    {
+      "name": "Ready for Tie-in with 22kV",
+      "date": "2027-02-15",
+      "status": "Upcoming",
+      "type": "target",
+      "color": "#f59e0b"
+    },
+    {
+      "name": "M/C (Mechanical Completion)",
+      "date": "2027-03-31",
+      "status": "Upcoming",
+      "type": "target",
+      "color": "#f59e0b"
+    },
+    {
+      "name": "1st Syn (1st Synchronization)",
+      "date": "2027-06-15",
+      "status": "Upcoming",
+      "type": "critical",
+      "color": "#ef4444"
+    },
+    {
+      "name": "COD (Commercial Operation Date)",
+      "date": "2027-07-31",
+      "status": "Upcoming",
+      "type": "critical",
+      "color": "#ef4444"
+    },
+    {
+      "name": "Completion Date",
+      "date": "2027-08-31",
+      "status": "Upcoming",
+      "type": "target",
+      "color": "#ef4444"
+    }
+  ],
+  "phases": [
+    {
+      "category": "Permit Work",
+      "color": "#38bdf8",
+      "tasks": [
+        {
+          "name": "CoP Approval",
+          "start": "2025-11-01",
+          "end": "2025-12-09",
+          "status": "Completed"
+        },
+        {
+          "name": "IEAT 01 Approval",
+          "start": "2025-11-15",
+          "end": "2025-12-22",
+          "status": "Completed"
+        },
+        {
+          "name": "IEAT 02 Approval",
+          "start": "2025-12-24",
+          "end": "2026-02-24",
+          "status": "Completed"
+        },
+        {
+          "name": "ERC Submitted",
+          "start": "2026-03-04",
+          "end": "2026-03-04",
+          "status": "Completed"
+        },
+        {
+          "name": "Electrical Generation/Distribution/Supply Re-Submission",
+          "start": "2026-07-01",
+          "end": "2026-07-31",
+          "status": "Completed"
+        },
+        {
+          "name": "Electrical Generation/Distribution/Supply Approval",
+          "start": "2026-08-01",
+          "end": "2026-10-31",
+          "status": "In Progress"
+        },
+        {
+          "name": "Por.Khor 2 Submission",
+          "start": "2026-11-01",
+          "end": "2026-11-30",
+          "status": "Upcoming"
+        },
+        {
+          "name": "IEAT 02/6 Submission",
+          "start": "2027-02-01",
+          "end": "2027-02-28",
+          "status": "Upcoming"
+        },
+        {
+          "name": "Por.Khor 2 Approval",
+          "start": "2026-11-01",
+          "end": "2027-03-31",
+          "status": "Upcoming"
+        },
+        {
+          "name": "IEAT 03/2 Submission",
+          "start": "2027-04-01",
+          "end": "2027-04-30",
+          "status": "Upcoming"
+        },
+        {
+          "name": "IEAT 02/6 Approval",
+          "start": "2027-02-01",
+          "end": "2027-05-31",
+          "status": "Upcoming"
+        },
+        {
+          "name": "PEA Grid Connection Approval",
+          "start": "2026-11-01",
+          "end": "2027-06-30",
+          "status": "Upcoming"
+        },
+        {
+          "name": "IEAT 03/2 Approval",
+          "start": "2027-04-01",
+          "end": "2027-06-30",
+          "status": "Upcoming"
+        }
+      ]
+    },
+    {
+      "category": "Engineering Work",
+      "color": "#f43f5e",
+      "tasks": [
+        {
+          "name": "Engineering Design & IFC Drawings Approval",
+          "start": "2026-03-01",
+          "end": "2026-07-31",
+          "status": "In Progress (Nearing Complete)"
+        }
+      ]
+    },
+    {
+      "category": "Procurement Work",
+      "color": "#10b981",
+      "tasks": [
+        {
+          "name": "Issued PO (PV Module, Inverter, Smart Logger)",
+          "start": "2025-11-01",
+          "end": "2025-12-31",
+          "status": "Completed"
+        },
+        {
+          "name": "Temporary Site Office & Assembly Laydown Area",
+          "start": "2026-03-01",
+          "end": "2026-06-30",
+          "status": "Completed"
+        },
+        {
+          "name": "PV Module Stock Area Delivery",
+          "start": "2026-05-01",
+          "end": "2026-05-31",
+          "status": "Completed"
+        },
+        {
+          "name": "DC Cable Onsite",
+          "start": "2026-06-01",
+          "end": "2026-06-30",
+          "status": "Completed"
+        },
+        {
+          "name": "PV & Pontoon 1st Lot Onsite",
+          "start": "2026-07-01",
+          "end": "2026-07-31",
+          "status": "Completed"
+        },
+        {
+          "name": "Inverter Onsite",
+          "start": "2026-08-01",
+          "end": "2026-08-31",
+          "status": "In Progress"
+        },
+        {
+          "name": "Pontoon Last Lot Onsite",
+          "start": "2026-09-01",
+          "end": "2026-09-30",
+          "status": "Upcoming"
+        },
+        {
+          "name": "SMDB Onsite",
+          "start": "2026-10-01",
+          "end": "2026-10-31",
+          "status": "Upcoming"
+        },
+        {
+          "name": "Transformer (TR) Onsite",
+          "start": "2026-10-01",
+          "end": "2026-10-31",
+          "status": "Upcoming"
+        },
+        {
+          "name": "SCADA System Onsite",
+          "start": "2026-11-01",
+          "end": "2026-11-30",
+          "status": "Upcoming"
+        },
+        {
+          "name": "AC Cable Onsite",
+          "start": "2026-12-01",
+          "end": "2026-12-31",
+          "status": "Upcoming"
+        }
+      ]
+    },
+    {
+      "category": "Construction Work",
+      "color": "#f59e0b",
+      "tasks": [
+        {
+          "name": "Prep Anchoring Work",
+          "start": "2026-06-01",
+          "end": "2026-06-30",
+          "status": "Completed"
+        },
+        {
+          "name": "Anchoring Work (Concrete Pile & Concrete Block)",
+          "start": "2026-06-01",
+          "end": "2026-10-31",
+          "status": "In Progress"
+        },
+        {
+          "name": "Assembly Floating and PV Module",
+          "start": "2026-07-01",
+          "end": "2026-11-30",
+          "status": "In Progress (80% PV Install Target: Nov 26)"
+        },
+        {
+          "name": "Installation of Floating set in position",
+          "start": "2026-07-01",
+          "end": "2026-12-31",
+          "status": "In Progress"
+        },
+        {
+          "name": "Transformer & SMDB Platform Foundation",
+          "start": "2026-05-01",
+          "end": "2026-10-31",
+          "status": "In Progress"
+        },
+        {
+          "name": "Control Room Building & MEP",
+          "start": "2026-04-01",
+          "end": "2026-10-31",
+          "status": "In Progress"
+        },
+        {
+          "name": "Visitor Building, Waste Storage & Guard House",
+          "start": "2026-05-01",
+          "end": "2026-12-31",
+          "status": "In Progress"
+        },
+        {
+          "name": "Inverter Install, DC & AC Cabling",
+          "start": "2026-08-01",
+          "end": "2027-02-28",
+          "status": "Upcoming (AC Connect with SMDB: Feb 27)"
+        },
+        {
+          "name": "Installation of SMDB and TR & Cabling work",
+          "start": "2026-09-01",
+          "end": "2027-01-31",
+          "status": "Upcoming (Ready for Tie-in: Feb 27)"
+        },
+        {
+          "name": "CCTV & Fire Alarm (FA)",
+          "start": "2026-10-01",
+          "end": "2026-12-31",
+          "status": "Upcoming"
+        },
+        {
+          "name": "SCADA and Monitoring System",
+          "start": "2026-11-01",
+          "end": "2026-12-31",
+          "status": "Upcoming"
+        },
+        {
+          "name": "Access Road",
+          "start": "2027-01-01",
+          "end": "2027-02-28",
+          "status": "Upcoming"
+        }
+      ]
+    },
+    {
+      "category": "Commissioning & Testing",
+      "color": "#8b5cf6",
+      "tasks": [
+        {
+          "name": "Pre-Commissioning",
+          "start": "2027-02-01",
+          "end": "2027-03-31",
+          "status": "Upcoming"
+        },
+        {
+          "name": "AC Withstand Test",
+          "start": "2027-03-15",
+          "end": "2027-03-31",
+          "status": "Upcoming"
+        },
+        {
+          "name": "Commissioning & Testing",
+          "start": "2027-04-01",
+          "end": "2027-06-30",
+          "status": "Upcoming"
+        },
+        {
+          "name": "1st Synchronization & COD",
+          "start": "2027-06-01",
+          "end": "2027-07-31",
+          "status": "Upcoming (COD: 31 Jul 2027)"
+        },
+        {
+          "name": "Plant Reliability Test (PR Test)",
+          "start": "2027-08-01",
+          "end": "2027-08-31",
+          "status": "Upcoming"
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Request Power receive from Owner substation on 1 Apr'26 (Achieved/Target)",
+    "Master Schedule based on Rev.0A",
+    "Cut-off Date: 01 August 2026 (Report No.16)"
+  ]
+}
