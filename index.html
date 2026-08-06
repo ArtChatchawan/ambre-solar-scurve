@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="th" data-theme="dark">
+<html lang="th" data-theme="light">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -550,6 +550,176 @@
       .header-actions { flex-direction: column; align-items: stretch; }
       .chart-container { height: 380px; }
     }
+
+    /* ---------------------------------------------------- */
+    /* Comprehensive Responsive & Light Mode Enhancements */
+    /* ---------------------------------------------------- */
+
+    /* Touch scrolling for all tables */
+    .table-wrapper {
+      -webkit-overflow-scrolling: touch;
+      overflow-x: auto;
+      width: 100%;
+    }
+
+    /* Tabs Horizontal Scroll on Mobile */
+    .tabs-group {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      max-width: 100%;
+      white-space: nowrap;
+      scrollbar-width: none; /* Firefox */
+    }
+    .tabs-group::-webkit-scrollbar {
+      display: none; /* Chrome/Safari */
+    }
+
+    .tab-btn {
+      flex-shrink: 0;
+    }
+
+    /* Gantt Task Rows Responsive */
+    .timeline-task-row {
+      display: grid;
+      grid-template-columns: 2.2fr 1.1fr 1.1fr 1.2fr;
+      gap: 12px;
+      padding: 10px 0;
+      border-bottom: 1px solid var(--border-dark);
+      align-items: center;
+      font-size: 0.83rem;
+    }
+
+    /* Responsive Breakpoints */
+    @media (max-width: 1024px) {
+      body {
+        padding: 16px;
+      }
+      .dashboard-container {
+        gap: 18px;
+      }
+      .kpi-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+      .chart-container {
+        height: 420px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      body {
+        padding: 12px;
+      }
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+        padding: 16px 20px;
+      }
+      .header-actions {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 8px;
+      }
+      .header-actions .btn {
+        justify-content: center;
+        width: 100%;
+        padding: 8px 12px;
+        font-size: 0.8rem;
+      }
+      .kpi-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+      }
+      .kpi-card {
+        padding: 14px;
+      }
+      .kpi-value {
+        font-size: 1.4rem;
+      }
+      .controls-card {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 12px;
+        padding: 14px;
+      }
+      .filter-group {
+        justify-content: space-between;
+        width: 100%;
+      }
+      .date-presets {
+        width: 100%;
+        overflow-x: auto;
+        padding-bottom: 4px;
+      }
+      .preset-btn {
+        flex-shrink: 0;
+      }
+      .chart-section {
+        padding: 16px;
+      }
+      .chart-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+      }
+      .toggles-group {
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+      .chart-container {
+        height: 360px;
+      }
+      .timeline-task-row {
+        grid-template-columns: 1fr 1fr;
+        gap: 8px;
+      }
+      .timeline-task-row > div:first-child {
+        grid-column: span 2;
+        font-size: 0.9rem;
+      }
+      .disc-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 480px) {
+      body {
+        padding: 8px;
+      }
+      .header-left {
+        gap: 12px;
+      }
+      .logo-badge {
+        width: 42px;
+        height: 42px;
+        font-size: 18px;
+        border-radius: 10px;
+      }
+      .header-title h1 {
+        font-size: 1.1rem;
+      }
+      .header-title p {
+        font-size: 0.75rem;
+      }
+      .header-actions {
+        grid-template-columns: 1fr;
+      }
+      .kpi-grid {
+        grid-template-columns: 1fr;
+      }
+      .chart-container {
+        height: 320px;
+      }
+      .search-input {
+        width: 100%;
+      }
+      .table-controls {
+        flex-direction: column;
+        align-items: stretch;
+      }
+    }
+
   </style>
 </head>
 <body>
@@ -568,7 +738,7 @@
       </div>
       <div class="header-actions">
         <button class="btn" id="btn-theme-toggle" onclick="toggleTheme()">
-          <i class="fa-solid fa-moon"></i> <span id="theme-text">Dark Mode</span>
+          <i class="fa-solid fa-sun"></i> <span id="theme-text">Light Mode</span>
         </button>
         <button class="btn" onclick="exportDataCSV()">
           <i class="fa-solid fa-download"></i> Export CSV
@@ -684,7 +854,7 @@
     <!-- Discipline Overview Grid -->
     <div class="discipline-cards-section">
       <div class="section-title">
-        <i class="fa-solid fa-layer-group"></i> Work Discipline Breakdown (% Weight & Progress)
+        <i class="fa-solid fa-layer-group"></i> Work Discipline Breakdown (% Weight & Progress: Actual vs Forecast)
       </div>
       <div class="disc-grid" id="disc-cards-grid">
         <!-- Rendered by JS -->
@@ -860,14 +1030,14 @@
       const themeText = document.getElementById('theme-text');
       const icon = document.querySelector('#btn-theme-toggle i');
 
-      if (html.getAttribute('data-theme') === 'dark') {
-        html.setAttribute('data-theme', 'light');
-        themeText.innerText = 'Light Mode';
-        icon.className = 'fa-solid fa-sun';
-      } else {
+      if (html.getAttribute('data-theme') === 'light') {
         html.setAttribute('data-theme', 'dark');
         themeText.innerText = 'Dark Mode';
         icon.className = 'fa-solid fa-moon';
+      } else {
+        html.setAttribute('data-theme', 'light');
+        themeText.innerText = 'Light Mode';
+        icon.className = 'fa-solid fa-sun';
       }
       if (scurveChart) {
         scurveChart.destroy();
@@ -1005,9 +1175,15 @@
         const discTimeline = rawData.disciplines[item.key].timeline;
         const cutoffWeek = discTimeline.filter(w => w.date <= rawData.cutoff_date).pop() || discTimeline[discTimeline.length - 1];
 
-        const actPct = cutoffWeek.actual_cum !== null ? (cutoffWeek.actual_cum * 100).toFixed(2) : '0.00';
-        const planPct = cutoffWeek.plan_cum !== null ? (cutoffWeek.plan_cum * 100).toFixed(2) : '0.00';
-        const varPct = (actPct - planPct).toFixed(2);
+        let actPct = '0.00';
+        if (cutoffWeek.actual_cum !== null && cutoffWeek.actual_cum !== undefined) {
+          actPct = (cutoffWeek.actual_cum * 100).toFixed(2);
+        } else if (item.key === 'Commissioning') {
+          actPct = '0.00';
+        }
+        
+        const fcPct = cutoffWeek.forecast_cum !== null ? (cutoffWeek.forecast_cum * 100).toFixed(2) : '0.00';
+        const varFcPct = (parseFloat(actPct) - parseFloat(fcPct)).toFixed(2);
 
         // find weight
         let weight = '0%';
@@ -1031,12 +1207,12 @@
               <span class="metric-val" style="color:${item.color};">${actPct}%</span>
             </div>
             <div class="metric-item">
-              <span class="metric-label">Plan</span>
-              <span class="metric-val">${planPct}%</span>
+              <span class="metric-label">Forecast</span>
+              <span class="metric-val" style="color:#10b981;">${fcPct}%</span>
             </div>
             <div class="metric-item">
-              <span class="metric-label">Variance</span>
-              <span class="metric-val" style="color:${varPct >= 0 ? '#10b981' : '#f43f5e'};">${varPct >= 0 ? '+' : ''}${varPct}%</span>
+              <span class="metric-label">Var (Act-FC)</span>
+              <span class="metric-val" style="color:${varFcPct >= 0 ? '#10b981' : '#f43f5e'};">${varFcPct >= 0 ? '+' : ''}${varFcPct}%</span>
             </div>
           </div>
           <div class="progress-bar-bg">
@@ -1440,7 +1616,7 @@
           else if (t.status.includes('COD') || t.status.includes('Critical')) statusBadge = '<span class="tag-badge tag-rose">Critical</span>';
 
           taskRows += `
-            <div style="display:grid; grid-template-columns: 2fr 1fr 1fr 1.2fr; gap:12px; padding: 10px 0; border-bottom: 1px solid rgba(255,255,255,0.05); align-items:center; font-size:0.83rem;">
+            <div style="class="timeline-task-row" gap:12px; padding: 10px 0; border-bottom: 1px solid rgba(255,255,255,0.05); align-items:center; font-size:0.83rem;">
               <div style="font-weight:600;"><i class="fa-solid fa-chevron-right" style="font-size:0.7rem; color:${phase.color}; margin-right:6px;"></i> ${t.name}</div>
               <div style="color:var(--text-muted);"><i class="fa-regular fa-calendar"></i> ${t.start}</div>
               <div style="color:var(--text-muted);"><i class="fa-regular fa-calendar-check"></i> ${t.end}</div>
