@@ -1,8 +1,8 @@
 {
   "project_title": "AMBRE FLOATING SOLAR AMATA CITY CHONBURI 42.5 MWp PROJECT",
-  "cutoff_date": "2026-08-15",
-  "excel_file": "260815_Overall S-Curve REPIT.xlsx",
-  "last_updated": "2026-08-19 10:09:49",
+  "cutoff_date": "2026-09-05",
+  "excel_file": "260905_Overall S-Curve REPIT.xlsx",
+  "last_updated": "2026-09-14 09:51:26",
   "summary_table": [
     {
       "row": 13,
@@ -108,11 +108,11 @@
       "name": "ENGINEERING",
       "weight_l1": 0.15,
       "weight_l2": null,
-      "plan_cum": 0.958919,
-      "forecast_cum": 0.866563,
-      "actual_cum": 0.734331,
-      "variance_plan": -0.224587,
-      "variance_forecast": -0.132232
+      "plan_cum": 0.977086,
+      "forecast_cum": 0.962356,
+      "actual_cum": 0.778152,
+      "variance_plan": -0.198934,
+      "variance_forecast": -0.184204
     },
     {
       "row": 27,
@@ -120,10 +120,10 @@
       "weight_l1": 0.012712,
       "weight_l2": 0.084744,
       "plan_cum": 1.0,
-      "forecast_cum": 0.977778,
+      "forecast_cum": 1.0,
       "actual_cum": 0.922222,
       "variance_plan": -0.077778,
-      "variance_forecast": -0.055556
+      "variance_forecast": -0.077778
     },
     {
       "row": 28,
@@ -131,21 +131,21 @@
       "weight_l1": 0.034727,
       "weight_l2": 0.231514,
       "plan_cum": 1.0,
-      "forecast_cum": 0.898322,
-      "actual_cum": 0.766552,
-      "variance_plan": -0.233448,
-      "variance_forecast": -0.13177
+      "forecast_cum": 1.0,
+      "actual_cum": 0.819425,
+      "variance_plan": -0.180575,
+      "variance_forecast": -0.180575
     },
     {
       "row": 29,
       "name": "Electrical Engineering",
       "weight_l1": 0.077148,
       "weight_l2": 0.514321,
-      "plan_cum": 0.935488,
-      "forecast_cum": 0.87748,
-      "actual_cum": 0.761054,
-      "variance_plan": -0.174434,
-      "variance_forecast": -0.116426
+      "plan_cum": 0.961849,
+      "forecast_cum": 0.953617,
+      "actual_cum": 0.797657,
+      "variance_plan": -0.164192,
+      "variance_forecast": -0.15596
     },
     {
       "row": 30,
@@ -153,43 +153,43 @@
       "weight_l1": 0.014331,
       "weight_l2": 0.095542,
       "plan_cum": 1.0,
-      "forecast_cum": 0.694003,
-      "actual_cum": 0.52157,
-      "variance_plan": -0.47843,
-      "variance_forecast": -0.172433
+      "forecast_cum": 0.937422,
+      "actual_cum": 0.551136,
+      "variance_plan": -0.448864,
+      "variance_forecast": -0.386286
     },
     {
       "row": 31,
       "name": "C&I Engineering",
       "weight_l1": 0.011082,
       "weight_l2": 0.073879,
-      "plan_cum": 0.893049,
-      "forecast_cum": 0.786631,
-      "actual_cum": 0.506951,
-      "variance_plan": -0.386097,
-      "variance_forecast": -0.27968
+      "plan_cum": 0.955437,
+      "forecast_cum": 0.894296,
+      "actual_cum": 0.641354,
+      "variance_plan": -0.314083,
+      "variance_forecast": -0.252942
     },
     {
       "row": 32,
       "name": "PROCUREMENT",
       "weight_l1": 0.4,
       "weight_l2": null,
-      "plan_cum": 0.5051,
-      "forecast_cum": 0.539525,
-      "actual_cum": 0.564774,
-      "variance_plan": 0.059675,
-      "variance_forecast": 0.02525
+      "plan_cum": 0.554987,
+      "forecast_cum": 0.605505,
+      "actual_cum": 0.616433,
+      "variance_plan": 0.061446,
+      "variance_forecast": 0.010928
     },
     {
       "row": 33,
       "name": "Electrical Equipment and Material",
       "weight_l1": 0.26015,
       "weight_l2": 0.650375,
-      "plan_cum": 0.61433,
-      "forecast_cum": 0.675199,
-      "actual_cum": 0.714257,
-      "variance_plan": 0.099928,
-      "variance_forecast": 0.039059
+      "plan_cum": 0.675326,
+      "forecast_cum": 0.77323,
+      "actual_cum": 0.793687,
+      "variance_plan": 0.118361,
+      "variance_forecast": 0.020457
     },
     {
       "row": 34,
@@ -207,11 +207,11 @@
       "name": "Mechanical Equipment & Material",
       "weight_l1": 0.006643,
       "weight_l2": 0.016608,
-      "plan_cum": 0.3,
-      "forecast_cum": 0.035143,
+      "plan_cum": 0.915207,
+      "forecast_cum": 0.123029,
       "actual_cum": 0.035143,
-      "variance_plan": -0.264857,
-      "variance_forecast": 0.0
+      "variance_plan": -0.880064,
+      "variance_forecast": -0.087887
     },
     {
       "row": 36,
@@ -219,21 +219,21 @@
       "weight_l1": 0.003893,
       "weight_l2": 0.009733,
       "plan_cum": 0.368598,
-      "forecast_cum": 0.290093,
+      "forecast_cum": 0.368598,
       "actual_cum": 0.274393,
       "variance_plan": -0.094206,
-      "variance_forecast": -0.015701
+      "variance_forecast": -0.094206
     },
     {
       "row": 37,
       "name": "CONSTRUCTION",
       "weight_l1": 0.377777,
       "weight_l2": null,
-      "plan_cum": 0.296608,
-      "forecast_cum": 0.233519,
-      "actual_cum": 0.25495,
-      "variance_plan": -0.041658,
-      "variance_forecast": 0.021431
+      "plan_cum": 0.369848,
+      "forecast_cum": 0.313001,
+      "actual_cum": 0.310005,
+      "variance_plan": -0.059842,
+      "variance_forecast": -0.002996
     },
     {
       "row": 38,
@@ -251,33 +251,33 @@
       "name": "Civil and Steel Structure Work",
       "weight_l1": 0.141445,
       "weight_l2": 0.374414,
-      "plan_cum": 0.497396,
-      "forecast_cum": 0.391262,
-      "actual_cum": 0.470542,
-      "variance_plan": -0.026854,
-      "variance_forecast": 0.07928
+      "plan_cum": 0.592159,
+      "forecast_cum": 0.53857,
+      "actual_cum": 0.552176,
+      "variance_plan": -0.039983,
+      "variance_forecast": 0.013607
     },
     {
       "row": 40,
       "name": "Electrical Work",
       "weight_l1": 0.181995,
       "weight_l2": 0.481751,
-      "plan_cum": 0.079866,
-      "forecast_cum": 0.037436,
-      "actual_cum": 0.030027,
-      "variance_plan": -0.049839,
-      "variance_forecast": -0.007409
+      "plan_cum": 0.142323,
+      "forecast_cum": 0.076707,
+      "actual_cum": 0.067378,
+      "variance_plan": -0.074945,
+      "variance_forecast": -0.009329
     },
     {
       "row": 41,
       "name": "Mechanical Work",
       "weight_l1": 0.027186,
       "weight_l2": 0.071963,
-      "plan_cum": 0.242866,
-      "forecast_cum": 0.202414,
-      "actual_cum": 0.13734,
-      "variance_plan": -0.105525,
-      "variance_forecast": -0.065073
+      "plan_cum": 0.349438,
+      "forecast_cum": 0.277579,
+      "actual_cum": 0.227608,
+      "variance_plan": -0.12183,
+      "variance_forecast": -0.04997
     },
     {
       "row": 42,
@@ -798,9 +798,9 @@
           "plan_cum": 0.487419,
           "forecast_inc": 0.025839,
           "forecast_cum": 0.46852,
-          "actual_inc": null,
-          "actual_cum": null,
-          "gain_shortfall": null
+          "actual_inc": 0.021776,
+          "actual_cum": 0.462818,
+          "gain_shortfall": -0.005702
         },
         {
           "col": 49,
@@ -809,9 +809,9 @@
           "plan_cum": 0.507041,
           "forecast_inc": 0.015963,
           "forecast_cum": 0.484483,
-          "actual_inc": null,
-          "actual_cum": null,
-          "gain_shortfall": null
+          "actual_inc": 0.008912,
+          "actual_cum": 0.47173,
+          "gain_shortfall": -0.012753
         },
         {
           "col": 50,
@@ -820,9 +820,9 @@
           "plan_cum": 0.5193,
           "forecast_inc": 0.028985,
           "forecast_cum": 0.513468,
-          "actual_inc": null,
-          "actual_cum": null,
-          "gain_shortfall": null
+          "actual_inc": 0.017347,
+          "actual_cum": 0.489077,
+          "gain_shortfall": -0.024391
         },
         {
           "col": 51,
@@ -2201,9 +2201,9 @@
           "plan_cum": 0.495987,
           "forecast_inc": 0.0,
           "forecast_cum": 0.390048,
-          "actual_inc": null,
-          "actual_cum": null,
-          "gain_shortfall": null
+          "actual_inc": 0.0,
+          "actual_cum": 0.390048,
+          "gain_shortfall": 0.0
         },
         {
           "col": 49,
@@ -2212,9 +2212,9 @@
           "plan_cum": 0.495987,
           "forecast_inc": 0.0,
           "forecast_cum": 0.390048,
-          "actual_inc": null,
-          "actual_cum": null,
-          "gain_shortfall": null
+          "actual_inc": 0.0,
+          "actual_cum": 0.390048,
+          "gain_shortfall": 0.0
         },
         {
           "col": 50,
@@ -2223,9 +2223,9 @@
           "plan_cum": 0.495987,
           "forecast_inc": 0.0,
           "forecast_cum": 0.390048,
-          "actual_inc": null,
-          "actual_cum": null,
-          "gain_shortfall": null
+          "actual_inc": 0.0,
+          "actual_cum": 0.390048,
+          "gain_shortfall": 0.0
         },
         {
           "col": 51,
@@ -3604,9 +3604,9 @@
           "plan_cum": 0.966215,
           "forecast_inc": 0.052723,
           "forecast_cum": 0.919286,
-          "actual_inc": null,
-          "actual_cum": null,
-          "gain_shortfall": null
+          "actual_inc": 0.028149,
+          "actual_cum": 0.762481,
+          "gain_shortfall": -0.156806
         },
         {
           "col": 49,
@@ -3615,9 +3615,9 @@
           "plan_cum": 0.973273,
           "forecast_inc": 0.014921,
           "forecast_cum": 0.934207,
-          "actual_inc": null,
-          "actual_cum": null,
-          "gain_shortfall": null
+          "actual_inc": 0.007954,
+          "actual_cum": 0.770435,
+          "gain_shortfall": -0.163772
         },
         {
           "col": 50,
@@ -3626,9 +3626,9 @@
           "plan_cum": 0.977086,
           "forecast_inc": 0.028149,
           "forecast_cum": 0.962356,
-          "actual_inc": null,
-          "actual_cum": null,
-          "gain_shortfall": null
+          "actual_inc": 0.007717,
+          "actual_cum": 0.778152,
+          "gain_shortfall": -0.184204
         },
         {
           "col": 51,
@@ -5007,9 +5007,9 @@
           "plan_cum": 0.522576,
           "forecast_inc": 0.02455,
           "forecast_cum": 0.564074,
-          "actual_inc": null,
-          "actual_cum": null,
-          "gain_shortfall": null
+          "actual_inc": 0.030334,
+          "actual_cum": 0.595108,
+          "gain_shortfall": 0.031034
         },
         {
           "col": 49,
@@ -5018,9 +5018,9 @@
           "plan_cum": 0.54477,
           "forecast_inc": 0.009778,
           "forecast_cum": 0.573852,
-          "actual_inc": null,
-          "actual_cum": null,
-          "gain_shortfall": null
+          "actual_inc": 0.001305,
+          "actual_cum": 0.596413,
+          "gain_shortfall": 0.022561
         },
         {
           "col": 50,
@@ -5029,9 +5029,9 @@
           "plan_cum": 0.554987,
           "forecast_inc": 0.031653,
           "forecast_cum": 0.605505,
-          "actual_inc": null,
-          "actual_cum": null,
-          "gain_shortfall": null
+          "actual_inc": 0.02002,
+          "actual_cum": 0.616433,
+          "gain_shortfall": 0.010928
         },
         {
           "col": 51,
@@ -6410,9 +6410,9 @@
           "plan_cum": 0.324092,
           "forecast_inc": 0.02147,
           "forecast_cum": 0.254989,
-          "actual_inc": null,
-          "actual_cum": null,
-          "gain_shortfall": null
+          "actual_inc": 0.014347,
+          "actual_cum": 0.269297,
+          "gain_shortfall": 0.014308
         },
         {
           "col": 49,
@@ -6421,9 +6421,9 @@
           "plan_cum": 0.349729,
           "forecast_inc": 0.025979,
           "forecast_cum": 0.280968,
-          "actual_inc": null,
-          "actual_cum": null,
-          "gain_shortfall": null
+          "actual_inc": 0.019051,
+          "actual_cum": 0.288348,
+          "gain_shortfall": 0.00738
         },
         {
           "col": 50,
@@ -6432,9 +6432,9 @@
           "plan_cum": 0.369848,
           "forecast_inc": 0.032033,
           "forecast_cum": 0.313001,
-          "actual_inc": null,
-          "actual_cum": null,
-          "gain_shortfall": null
+          "actual_inc": 0.021657,
+          "actual_cum": 0.310005,
+          "gain_shortfall": -0.002996
         },
         {
           "col": 51,
@@ -7780,9 +7780,9 @@
           "plan_cum": 0.0,
           "forecast_inc": 0.0,
           "forecast_cum": 0.0,
-          "actual_inc": null,
-          "actual_cum": null,
-          "gain_shortfall": null
+          "actual_inc": 0.0,
+          "actual_cum": 0.0,
+          "gain_shortfall": 0.0
         },
         {
           "col": 46,
@@ -7791,9 +7791,9 @@
           "plan_cum": 0.0,
           "forecast_inc": 0.0,
           "forecast_cum": 0.0,
-          "actual_inc": null,
-          "actual_cum": null,
-          "gain_shortfall": null
+          "actual_inc": 0.0,
+          "actual_cum": 0.0,
+          "gain_shortfall": 0.0
         },
         {
           "col": 47,
@@ -7802,9 +7802,9 @@
           "plan_cum": 0.0,
           "forecast_inc": 0.0,
           "forecast_cum": 0.0,
-          "actual_inc": null,
-          "actual_cum": null,
-          "gain_shortfall": null
+          "actual_inc": 0.0,
+          "actual_cum": 0.0,
+          "gain_shortfall": 0.0
         },
         {
           "col": 48,
@@ -7813,9 +7813,9 @@
           "plan_cum": 0.0,
           "forecast_inc": 0.0,
           "forecast_cum": 0.0,
-          "actual_inc": null,
-          "actual_cum": null,
-          "gain_shortfall": null
+          "actual_inc": 0.0,
+          "actual_cum": 0.0,
+          "gain_shortfall": 0.0
         },
         {
           "col": 49,
@@ -7824,9 +7824,9 @@
           "plan_cum": 0.0,
           "forecast_inc": 0.0,
           "forecast_cum": 0.0,
-          "actual_inc": null,
-          "actual_cum": null,
-          "gain_shortfall": null
+          "actual_inc": 0.0,
+          "actual_cum": 0.0,
+          "gain_shortfall": 0.0
         },
         {
           "col": 50,
@@ -7835,9 +7835,9 @@
           "plan_cum": 0.0,
           "forecast_inc": 0.0,
           "forecast_cum": 0.0,
-          "actual_inc": null,
-          "actual_cum": null,
-          "gain_shortfall": null
+          "actual_inc": 0.0,
+          "actual_cum": 0.0,
+          "gain_shortfall": 0.0
         },
         {
           "col": 51,

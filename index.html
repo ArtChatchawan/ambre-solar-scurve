@@ -733,7 +733,7 @@
         </div>
         <div class="header-title">
           <h1>AMBRE FLOATING SOLAR 42.5 MWp</h1>
-          <p>Interactive Construction S-Curve Dashboard • Data Cut-off: <span id="cutoff-date-header">15 Aug 2026</span></p>
+          <p>Interactive Construction S-Curve Dashboard • Data Cut-off: <span id="cutoff-date-header">5 Sep 2026</span></p>
         </div>
       </div>
       <div class="header-actions">
@@ -858,7 +858,7 @@
           <i class="fa-solid fa-layer-group"></i> Work Discipline Breakdown (% Weight & Progress: Actual vs Forecast)
         </div>
         <div style="font-size:0.8rem; color:var(--text-muted);">
-          Data Cut-off: <span id="disc-card-cutoff">15 Aug 2026</span>
+          Data Cut-off: <span id="disc-card-cutoff">5 Sep 2026</span>
         </div>
       </div>
 
@@ -890,7 +890,7 @@
       <div class="chart-header">
         <div class="chart-title">
           <h2><i class="fa-solid fa-flag-checkered" style="color:var(--accent-cyan);"></i> Executive Master Schedule & Key Milestones (Rev.0A)</h2>
-          <p style="font-size:0.82rem; color:var(--text-muted); margin-top:4px;">Project Execution Roadmap • Data Cut-off: 15 Aug 2026 (Report No.18)</p>
+          <p style="font-size:0.82rem; color:var(--text-muted); margin-top:4px;">Project Execution Roadmap • Data Cut-off: 05 Sep 2026 (Report No.21)</p>
         </div>
         <div class="toggles-group">
           <button class="btn btn-primary" onclick="window.print()"><i class="fa-solid fa-print"></i> Print Executive Summary</button>
@@ -930,10 +930,10 @@
             <tr style="background: rgba(0, 242, 254, 0.08);">
               <td style="text-align:center;">3</td>
               <td style="font-weight:600;"><i class="fa-solid fa-clock-rotate-left" style="color:#00f2fe; margin-right:6px;"></i> Current Cut-off Status</td>
-              <td style="text-align:center; font-weight:700; color:#00f2fe;">15 Aug 2026</td>
+              <td style="text-align:center; font-weight:700; color:#00f2fe;">05 Sep 2026</td>
               <td>Benchmark</td>
-              <td style="text-align:center;"><span class="tag-badge tag-cyan" style="background:rgba(0,242,254,0.2); color:#00f2fe;">Progress Report #18</span></td>
-              <td style="color:var(--text-muted);">ผลงานจริงสะสม 44.10%</td>
+              <td style="text-align:center;"><span class="tag-badge tag-cyan" style="background:rgba(0,242,254,0.2); color:#00f2fe;">Progress Report #21</span></td>
+              <td style="color:var(--text-muted);">ผลงานจริงสะสม 48.91%</td>
             </tr>
             <tr>
               <td style="text-align:center;">4</td>
@@ -1185,7 +1185,7 @@
       tbody.innerHTML = '';
 
       const cutoffLabel = document.getElementById('disc-card-cutoff');
-      if (cutoffLabel) cutoffLabel.innerText = '15 Aug 2026';
+      if (cutoffLabel) cutoffLabel.innerText = '5 Sep 2026';
 
       const l1Items = [
         { num: 1, key: 'Permit', name: 'Permit Work', icon: 'fa-file-signature', color: '#00f2fe', weight: '2.22%' },
@@ -1345,14 +1345,14 @@
               annotations: {
                 cutoffLine: {
                   type: 'line',
-                  xMin: '2026-08-15',
-                  xMax: '2026-08-15',
+                  xMin: '2026-09-05',
+                  xMax: '2026-09-05',
                   borderColor: '#f43f5e',
                   borderWidth: 2,
                   borderDash: [6, 4],
                   label: {
                     display: true,
-                    content: 'Cut-off: 15 Aug 26',
+                    content: 'Cut-off: 5 Sep 26',
                     position: 'start',
                     backgroundColor: '#f43f5e',
                     color: '#fff',
@@ -1547,9 +1547,9 @@
       if (!tbody || !rawData) return;
       tbody.innerHTML = '';
 
-      const cutoff = rawData.cutoff_date || '2026-08-15';
-      document.getElementById('cutoff-date-header').innerText = '15 Aug 2026';
-      document.getElementById('summary-cutoff-label').innerText = '15 Aug 2026';
+      const cutoff = rawData.cutoff_date || '2026-09-05';
+      document.getElementById('cutoff-date-header').innerText = '5 Sep 2026';
+      document.getElementById('summary-cutoff-label').innerText = '5 Sep 2026';
 
       const items = [
         { num: 1, key: 'Permit', name: '1. Permit Work', weight: '2.22%' },
