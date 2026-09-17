@@ -20,33 +20,46 @@
 
   <style>
     :root {
-      --bg-dark: #0f172a;
-      --bg-card-dark: rgba(30, 41, 59, 0.7);
-      --bg-card-hover: rgba(51, 65, 85, 0.8);
-      --border-dark: rgba(255, 255, 255, 0.1);
-      --text-main: #f8fafc;
-      --text-muted: #94a3b8;
+      --bg-dark: #f8fafc;
+      --bg-card-dark: #ffffff;
+      --bg-card-hover: #fff7ed;
+      --border-dark: rgba(249, 87, 22, 0.15);
+      --text-main: #0f172a;
+      --text-muted: #64748b;
       
-      --accent-cyan: #00f2fe;
-      --accent-blue: #4facfe;
+      --accent-orange: #f95716;
+      --accent-orange-dark: #ea580c;
+      --accent-cyan: #2563eb;
+      --accent-blue: #2563eb;
+      --accent-blue: #3b82f6;
       --accent-green: #10b981;
       --accent-amber: #f59e0b;
-      --accent-rose: #f43f5e;
+      --accent-rose: #ef4444;
       --accent-purple: #8b5cf6;
       
       --card-radius: 16px;
-      --shadow-glow: 0 8px 32px 0 rgba(0, 242, 254, 0.15);
+      --shadow-glow: 0 8px 30px rgba(249, 87, 22, 0.12);
       --transition-fast: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
     }
 
     [data-theme="light"] {
-      --bg-dark: #f1f5f9;
-      --bg-card-dark: rgba(255, 255, 255, 0.85);
-      --bg-card-hover: rgba(241, 245, 249, 0.95);
-      --border-dark: rgba(0, 0, 0, 0.08);
+      --bg-dark: #f8fafc;
+      --bg-card-dark: #ffffff;
+      --bg-card-hover: #fff7ed;
+      --border-dark: rgba(249, 87, 22, 0.15);
       --text-main: #0f172a;
       --text-muted: #64748b;
-      --shadow-glow: 0 8px 32px 0 rgba(15, 23, 42, 0.08);
+      --shadow-glow: 0 8px 30px rgba(249, 87, 22, 0.10);
+    }
+
+    [data-theme="dark"] {
+      --bg-dark: #0f172a;
+      --bg-card-dark: rgba(30, 41, 59, 0.85);
+      --bg-card-hover: rgba(51, 65, 85, 0.9);
+      --border-dark: rgba(255, 255, 255, 0.1);
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+      --shadow-glow: 0 8px 32px rgba(249, 87, 22, 0.2);
     }
 
     * {
@@ -63,8 +76,8 @@
       padding: 24px;
       line-height: 1.5;
       background-image: 
-        radial-gradient(at 0% 0%, rgba(0, 242, 254, 0.08) 0px, transparent 50%),
-        radial-gradient(at 100% 100%, rgba(79, 172, 254, 0.08) 0px, transparent 50%);
+        radial-gradient(at 0% 0%, rgba(249, 87, 22, 0.07) 0px, transparent 50%),
+        radial-gradient(at 100% 100%, rgba(251, 146, 60, 0.05) 0px, transparent 50%);
       background-attachment: fixed;
     }
 
@@ -157,14 +170,16 @@
     }
 
     .btn-primary {
-      background: linear-gradient(135deg, var(--accent-cyan), var(--accent-blue));
-      color: #0f172a;
+      background: linear-gradient(135deg, #f95716, #ea580c);
+      color: #ffffff;
       font-weight: 600;
       border: none;
+      box-shadow: 0 4px 14px rgba(249, 87, 22, 0.25);
     }
 
     .btn-primary:hover {
-      box-shadow: 0 4px 16px rgba(0, 242, 254, 0.4);
+      box-shadow: 0 6px 20px rgba(249, 87, 22, 0.4);
+      transform: translateY(-2px);
     }
 
     /* KPI Cards Grid */
@@ -203,7 +218,7 @@
       background: var(--accent-blue);
     }
 
-    .kpi-card.cyan::before { background: var(--accent-cyan); }
+    .kpi-card.cyan::before { background: #f95716; }
     .kpi-card.green::before { background: var(--accent-green); }
     .kpi-card.amber::before { background: var(--accent-amber); }
     .kpi-card.rose::before { background: var(--accent-rose); }
@@ -239,6 +254,11 @@
       display: inline-block;
     }
 
+        .tag-cyan {
+      background: rgba(37, 99, 235, 0.12);
+      color: #2563eb;
+      border: 1px solid rgba(37, 99, 235, 0.3);
+    }
     .tag-green { background: rgba(16, 185, 129, 0.15); color: #10b981; }
     .tag-rose { background: rgba(244, 63, 94, 0.15); color: #f43f5e; }
     .tag-amber { background: rgba(245, 158, 11, 0.15); color: #f59e0b; }
@@ -284,9 +304,9 @@
     }
 
     .tab-btn.active {
-      background: linear-gradient(135deg, var(--accent-cyan), var(--accent-blue));
-      color: #0f172a;
-      box-shadow: 0 2px 10px rgba(0, 242, 254, 0.3);
+      background: linear-gradient(135deg, #f95716, #ea580c);
+      color: #ffffff;
+      box-shadow: 0 4px 14px rgba(249, 87, 22, 0.3);
     }
 
     .filter-group {
@@ -313,8 +333,9 @@
     }
 
     .preset-btn.active, .preset-btn:hover {
-      border-color: var(--accent-cyan);
-      color: var(--accent-cyan);
+      border-color: #f95716;
+      color: #f95716;
+      background: #fff7ed;
     }
 
     /* Main Chart Section */
@@ -524,8 +545,9 @@
     }
 
     [data-theme="light"] th {
-      background: #e2e8f0;
-      color: #334155;
+      background: #fff7ed;
+      color: #9a3412;
+      border-bottom: 2px solid #fed7aa;
     }
 
     td {
@@ -728,12 +750,12 @@
     <!-- Header -->
     <header>
       <div class="header-left">
-        <div class="logo-badge">
-          <i class="fa-solid fa-chart-line"></i>
+        <div class="logo-badge" style="background: transparent; box-shadow: none; width: auto; height: auto; padding: 0;">
+          <img src="AMBRE LOGO.png" alt="AMBRE Logo" style="height: 52px; max-width: 220px; object-fit: contain;">
         </div>
         <div class="header-title">
           <h1>AMBRE FLOATING SOLAR 42.5 MWp</h1>
-          <p>Interactive Construction S-Curve Dashboard • Data Cut-off: <span id="cutoff-date-header">5 Sep 2026</span></p>
+          <p>Interactive Construction S-Curve Dashboard • Data Cut-off: <span id="cutoff-date-header">12 Sep 2026</span></p>
         </div>
       </div>
       <div class="header-actions">
@@ -858,7 +880,7 @@
           <i class="fa-solid fa-layer-group"></i> Work Discipline Breakdown (% Weight & Progress: Actual vs Forecast)
         </div>
         <div style="font-size:0.8rem; color:var(--text-muted);">
-          Data Cut-off: <span id="disc-card-cutoff">5 Sep 2026</span>
+          Data Cut-off: <span id="disc-card-cutoff">12 Sep 2026</span>
         </div>
       </div>
 
@@ -890,7 +912,7 @@
       <div class="chart-header">
         <div class="chart-title">
           <h2><i class="fa-solid fa-flag-checkered" style="color:var(--accent-cyan);"></i> Executive Master Schedule & Key Milestones (Rev.0A)</h2>
-          <p style="font-size:0.82rem; color:var(--text-muted); margin-top:4px;">Project Execution Roadmap • Data Cut-off: 05 Sep 2026 (Report No.21)</p>
+          <p style="font-size:0.82rem; color:var(--text-muted); margin-top:4px;">Project Execution Roadmap • Data Cut-off: 12 Sep 2026 (Report No.22)</p>
         </div>
         <div class="toggles-group">
           <button class="btn btn-primary" onclick="window.print()"><i class="fa-solid fa-print"></i> Print Executive Summary</button>
@@ -929,11 +951,11 @@
             </tr>
             <tr style="background: rgba(0, 242, 254, 0.08);">
               <td style="text-align:center;">3</td>
-              <td style="font-weight:600;"><i class="fa-solid fa-clock-rotate-left" style="color:#00f2fe; margin-right:6px;"></i> Current Cut-off Status</td>
-              <td style="text-align:center; font-weight:700; color:#00f2fe;">05 Sep 2026</td>
+              <td style="font-weight:600;"><i class="fa-solid fa-clock-rotate-left" style="color:#2563eb; margin-right:6px;"></i> Current Cut-off Status</td>
+              <td style="text-align:center; font-weight:700; color:#2563eb;">12 Sep 2026</td>
               <td>Benchmark</td>
-              <td style="text-align:center;"><span class="tag-badge tag-cyan" style="background:rgba(0,242,254,0.2); color:#00f2fe;">Progress Report #21</span></td>
-              <td style="color:var(--text-muted);">ผลงานจริงสะสม 48.91%</td>
+              <td style="text-align:center;"><span class="tag-badge tag-cyan" style="background:rgba(37, 99, 235, 0.15); color:#2563eb;">Progress Report #22</span></td>
+              <td style="color:var(--text-muted);">ผลงานจริงสะสม 49.71%</td>
             </tr>
             <tr>
               <td style="text-align:center;">4</td>
@@ -1118,6 +1140,66 @@
       return list;
     }
 
+    
+    // Helper to get robust Cut-off values for any discipline
+    function getDisciplineCutoffValues(discKey) {
+      if (!rawData || !rawData.disciplines || !rawData.disciplines[discKey]) {
+        return { plan: 0, forecast: 0, actual: 0, actualInc: 0 };
+      }
+
+      const timeline = rawData.disciplines[discKey].timeline;
+      const cutoffDate = rawData.cutoff_date;
+      const cutoffWeek = timeline.filter(w => w.date <= cutoffDate).pop() || timeline[timeline.length - 1];
+
+      let planCum = cutoffWeek ? cutoffWeek.plan_cum : 0;
+      let fcCum = cutoffWeek ? cutoffWeek.forecast_cum : 0;
+      let actCum = cutoffWeek ? cutoffWeek.actual_cum : null;
+
+      const summaryNameMap = {
+        'Permit': 'PERMIT',
+        'Engineering': 'ENGINEERING',
+        'Procurement': 'PROCUREMENT',
+        'Construction': 'CONSTRUCTION',
+        'Commissioning': 'COMMISSIONING & PROJECT HANDOVER',
+        'Overall': 'OVERALL PROGRESS'
+      };
+      const targetSummaryName = summaryNameMap[discKey] || discKey.toUpperCase();
+
+      // Search summary_table using EXACT name match first
+      if (rawData.summary_table) {
+        const summaryRow = rawData.summary_table.find(r => r.name && r.name.trim().toUpperCase() === targetSummaryName);
+        if (summaryRow) {
+          if (summaryRow.actual_cum !== null && summaryRow.actual_cum !== undefined) actCum = summaryRow.actual_cum;
+          if (summaryRow.forecast_cum !== null && summaryRow.forecast_cum !== undefined) fcCum = summaryRow.forecast_cum;
+          if (summaryRow.plan_cum !== null && summaryRow.plan_cum !== undefined) planCum = summaryRow.plan_cum;
+        }
+      }
+
+      // Fallback 2: latest week <= cutoffDate where actual_cum is not null in timeline
+      if (actCum === null || actCum === undefined) {
+        const lastActWeek = timeline.filter(w => w.date <= cutoffDate && w.actual_cum !== null && w.actual_cum !== undefined).pop();
+        if (lastActWeek) {
+          actCum = lastActWeek.actual_cum;
+        } else {
+          actCum = 0;
+        }
+      }
+
+      let actInc = cutoffWeek ? cutoffWeek.actual_inc : 0;
+      if (actInc === null || actInc === undefined) {
+        const lastIncWeek = timeline.filter(w => w.date <= cutoffDate && w.actual_inc !== null && w.actual_inc !== undefined).pop();
+        actInc = lastIncWeek ? lastIncWeek.actual_inc : 0;
+      }
+
+      return {
+        plan: planCum !== null ? planCum : 0,
+        forecast: fcCum !== null ? fcCum : 0,
+        actual: actCum !== null ? actCum : 0,
+        actualInc: actInc !== null ? actInc : 0,
+        cutoffWeek: cutoffWeek
+      };
+    }
+
     // Render KPI Cards
     function renderKPICards() {
       const discTimeline = rawData.disciplines[currentDiscipline].timeline;
@@ -1185,10 +1267,10 @@
       tbody.innerHTML = '';
 
       const cutoffLabel = document.getElementById('disc-card-cutoff');
-      if (cutoffLabel) cutoffLabel.innerText = '5 Sep 2026';
+      if (cutoffLabel) cutoffLabel.innerText = '12 Sep 2026';
 
       const l1Items = [
-        { num: 1, key: 'Permit', name: 'Permit Work', icon: 'fa-file-signature', color: '#00f2fe', weight: '2.22%' },
+        { num: 1, key: 'Permit', name: 'Permit Work', icon: 'fa-file-signature', color: '#2563eb', weight: '2.22%' },
         { num: 2, key: 'Engineering', name: 'Engineering Work', icon: 'fa-compass-drafting', color: '#f43f5e', weight: '15.00%' },
         { num: 3, key: 'Procurement', name: 'Procurement Work', icon: 'fa-truck-ramp-box', color: '#10b981', weight: '40.00%' },
         { num: 4, key: 'Construction', name: 'Construction Work', icon: 'fa-helmet-safety', color: '#f59e0b', weight: '37.78%' },
@@ -1196,17 +1278,10 @@
       ];
 
       l1Items.forEach(item => {
-        const discTimeline = rawData.disciplines[item.key].timeline;
-        const cutoffWeek = discTimeline.filter(w => w.date <= rawData.cutoff_date).pop() || discTimeline[discTimeline.length - 1];
+        const vals = getDisciplineCutoffValues(item.key);
 
-        let actPct = '0.00';
-        if (cutoffWeek.actual_cum !== null && cutoffWeek.actual_cum !== undefined) {
-          actPct = (cutoffWeek.actual_cum * 100).toFixed(2);
-        } else if (item.key === 'Commissioning') {
-          actPct = '0.00';
-        }
-        
-        const fcPct = cutoffWeek.forecast_cum !== null ? (cutoffWeek.forecast_cum * 100).toFixed(2) : '0.00';
+        const actPct = (vals.actual * 100).toFixed(2);
+        const fcPct = (vals.forecast * 100).toFixed(2);
         const varFcVal = (parseFloat(actPct) - parseFloat(fcPct)).toFixed(2);
         const varFcStr = (varFcVal >= 0 ? '+' : '') + varFcVal + '%';
 
@@ -1285,12 +1360,12 @@
             {
               label: 'Actual Cumulative (%)',
               data: timeline.map(t => t.actual_cum !== null ? +(t.actual_cum * 100).toFixed(2) : null),
-              borderColor: '#00f2fe',
-              backgroundColor: 'rgba(0, 242, 254, 0.2)',
+              borderColor: '#f95716',
+              backgroundColor: 'rgba(37, 99, 235, 0.15)',
               borderWidth: 4,
               tension: 0.3,
               pointRadius: 2,
-              pointBackgroundColor: '#00f2fe',
+              pointBackgroundColor: '#2563eb',
               pointHoverRadius: 7,
               fill: true,
               yAxisID: 'y'
@@ -1345,14 +1420,14 @@
               annotations: {
                 cutoffLine: {
                   type: 'line',
-                  xMin: '2026-09-05',
-                  xMax: '2026-09-05',
+                  xMin: '2026-09-12',
+                  xMax: '2026-09-12',
                   borderColor: '#f43f5e',
                   borderWidth: 2,
                   borderDash: [6, 4],
                   label: {
                     display: true,
-                    content: 'Cut-off: 5 Sep 26',
+                    content: 'Cut-off: 12 Sep 26',
                     position: 'start',
                     backgroundColor: '#f43f5e',
                     color: '#fff',
@@ -1468,7 +1543,7 @@
 
         const tr = document.createElement('tr');
         if (isCutoff) {
-          tr.style.background = 'rgba(0, 242, 254, 0.15)';
+          tr.style.background = 'rgba(37, 99, 235, 0.12)';
           tr.style.fontWeight = '600';
         }
 
@@ -1547,9 +1622,9 @@
       if (!tbody || !rawData) return;
       tbody.innerHTML = '';
 
-      const cutoff = rawData.cutoff_date || '2026-09-05';
-      document.getElementById('cutoff-date-header').innerText = '5 Sep 2026';
-      document.getElementById('summary-cutoff-label').innerText = '5 Sep 2026';
+      const cutoff = rawData.cutoff_date || '2026-09-12';
+      document.getElementById('cutoff-date-header').innerText = '12 Sep 2026';
+      document.getElementById('summary-cutoff-label').innerText = '12 Sep 2026';
 
       const items = [
         { num: 1, key: 'Permit', name: '1. Permit Work', weight: '2.22%' },
@@ -1561,18 +1636,11 @@
       ];
 
       items.forEach(item => {
-        const discTimeline = rawData.disciplines[item.key].timeline;
-        const cutoffWeek = discTimeline.filter(w => w.date <= cutoff).pop() || discTimeline[discTimeline.length - 1];
+        const vals = getDisciplineCutoffValues(item.key);
 
-        const planC = cutoffWeek.plan_cum !== null ? (cutoffWeek.plan_cum * 100).toFixed(2) : '0.00';
-        const fcC = cutoffWeek.forecast_cum !== null ? (cutoffWeek.forecast_cum * 100).toFixed(2) : '0.00';
-        
-        let actC = '0.00';
-        if (cutoffWeek.actual_cum !== null && cutoffWeek.actual_cum !== undefined) {
-          actC = (cutoffWeek.actual_cum * 100).toFixed(2);
-        } else if (item.key === 'Commissioning') {
-          actC = '0.00';
-        }
+        const planC = (vals.plan * 100).toFixed(2);
+        const fcC = (vals.forecast * 100).toFixed(2);
+        const actC = (vals.actual * 100).toFixed(2);
 
         const varPVal = (parseFloat(actC) - parseFloat(planC)).toFixed(2);
         const varFVal = (parseFloat(actC) - parseFloat(fcC)).toFixed(2);
@@ -1593,7 +1661,7 @@
 
         const tr = document.createElement('tr');
         if (item.isOverall) {
-          tr.style.cssText = 'background: rgba(0, 242, 254, 0.15); font-weight: 700; font-size: 0.9rem; border-top: 2px solid var(--accent-cyan);';
+          tr.style.cssText = 'background: rgba(37, 99, 235, 0.12); font-weight: 700; font-size: 0.9rem; border-top: 2px solid var(--accent-cyan);';
         }
 
         tr.innerHTML = `
@@ -1644,7 +1712,7 @@
         phase.tasks.forEach(t => {
           let statusBadge = '<span class="tag-badge tag-amber">Upcoming</span>';
           if (t.status.includes('Completed')) statusBadge = '<span class="tag-badge tag-green">Completed</span>';
-          else if (t.status.includes('In Progress')) statusBadge = '<span class="tag-badge tag-cyan" style="background:rgba(0,242,254,0.15); color:#00f2fe;">In Progress</span>';
+          else if (t.status.includes('In Progress')) statusBadge = '<span class="tag-badge tag-cyan" style="background:rgba(37, 99, 235, 0.12); color:#2563eb;">In Progress</span>';
           else if (t.status.includes('COD') || t.status.includes('Critical')) statusBadge = '<span class="tag-badge tag-rose">Critical</span>';
 
           taskRows += `
